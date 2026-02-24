@@ -204,6 +204,9 @@ const UIOverlay: React.FC<UIOverlayProps> = ({
                         <img 
                           src={ship.image} 
                           alt={ship.label}
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).style.display = 'none';
+                          }}
                           className={`w-10 h-10 object-contain relative z-10 transition-transform duration-500 ${
                             selectedShip === ship.type ? 'scale-110' : 'scale-90 grayscale'
                           }`}

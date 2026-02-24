@@ -15,10 +15,10 @@ export const PLAYER_CONFIG = {
   width: PLAYER_SIZE,
   height: PLAYER_SIZE,
   images: {
-    [ShipType.BALANCED]: '/assets/player_balanced.png',
-    [ShipType.SPEED]: '/assets/player_speed.png',
-    [ShipType.POWER]: '/assets/player_power.png',
-    [ShipType.DEFENSE]: '/assets/player_defense.png',
+    [ShipType.BALANCED]: 'assets/player_balanced.png',
+    [ShipType.SPEED]: 'assets/player_speed.png',
+    [ShipType.POWER]: 'assets/player_power.png',
+    [ShipType.DEFENSE]: 'assets/player_defense.png',
   }
 };
 
@@ -31,7 +31,7 @@ export const ENEMY_CONFIG = {
     points: 100,
     color: '#3b82f6', // blue-500
     spawnWeight: 0.7,
-    imagePath: '/assets/enemy_basic.png'
+    imagePath: 'assets/enemy_basic.png'
   },
   [EnemyType.FAST]: {
     width: 30,
@@ -41,7 +41,7 @@ export const ENEMY_CONFIG = {
     points: 200,
     color: '#10b981', // emerald-500
     spawnWeight: 0.2,
-    imagePath: '/assets/enemy_fast.png'
+    imagePath: 'assets/enemy_fast.png'
   },
   [EnemyType.HEAVY]: {
     width: 60,
@@ -51,7 +51,7 @@ export const ENEMY_CONFIG = {
     points: 500,
     color: '#ef4444', // red-500
     spawnWeight: 0.1,
-    imagePath: '/assets/enemy_heavy.png'
+    imagePath: 'assets/enemy_heavy.png'
   },
   [EnemyType.BOSS]: {
     width: 150,
@@ -61,7 +61,7 @@ export const ENEMY_CONFIG = {
     points: 5000,
     color: '#f43f5e', // rose-500
     spawnWeight: 0,
-    imagePath: '/assets/boss.png'
+    imagePath: 'assets/boss.png'
   }
 };
 
